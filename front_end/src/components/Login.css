@@ -1,0 +1,15 @@
+/* Login.css */
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form {
+    width: 300px;
+  }
+  
+  div > div {
+    margin-bottom: 10px;
+  }
+  
