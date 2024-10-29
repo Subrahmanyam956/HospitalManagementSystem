@@ -1,8 +1,18 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
+from flask_sqlalchemy import SQLAlchemy
+
+
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes to allow cross-origin requests
+
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://username:password@localhost:3306/database_name'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False  # optional, to suppress warnings
+
+db = SQLAlchemy(app)
+
 
 # Sample users with roles
 users = {

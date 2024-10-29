@@ -1,0 +1,5 @@
+select *
+from users
+where username = 'user_email'
+and password = pwd
+;

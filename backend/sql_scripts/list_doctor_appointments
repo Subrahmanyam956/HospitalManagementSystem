@@ -1,0 +1,4 @@
+select *
+from appointments
+where doctor_id = id
+;

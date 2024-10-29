@@ -1,0 +1,3 @@
+UPDATE private_rooms
+SET patient_id = id, doctor_id = employee_id, admission_date = 'now()', room_status = 'status'
+WHERE room_number = 'room_number';

@@ -1,0 +1,2 @@
+INSERT INTO employees (first_name, last_name, position, department, hire_date, salary, email, role)
+VALUES ('fName', 'lName', 'position', 'department', 'date', salary, 'email', 'role');

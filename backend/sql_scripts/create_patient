@@ -1,0 +1,5 @@
+INSERT INTO patients (first_name, last_name, date_of_birth, gender, contact_number, email, address, emergency_contact, admission_date, doctor_assigned, diagnosis, treatment_plan)
+Select 'fName', 'lName', 'date_of_birth', 'gender', 'mobileNo', 'email', 'address', 'emergency_contact', 'admission_date', employee_id, 'diagnosis', 'treatment_plan'
+from employees
+where employee_id = id and role='doctor'
+;

@@ -1,0 +1,4 @@
+INSERT INTO appointments (patient_id, doctor_id, appointment_date, appointment_time, status, notes)
+SELECT patient_id, employee_id, 'appointment_date', 'appointment_time', 'status', 'notes'
+FROM employees
+WHERE employee_id = id AND role = 'doctor';

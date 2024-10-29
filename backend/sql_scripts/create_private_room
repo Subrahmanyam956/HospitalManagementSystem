@@ -1,0 +1,2 @@
+INSERT INTO private_rooms (room_number, room_status, room_type, daily_rate)
+VALUES ('room_number', 'room_status', 'room_type', daily_rate);
